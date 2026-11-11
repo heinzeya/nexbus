@@ -13,6 +13,10 @@ http://localhost:4000/busstops/50001
 http://localhost:4000/busstops/50001?theme=led
 ```
 
+<p align="center">
+  <img src="docs/images/board-transit.png" alt="Stop board for Northbound Seymour St @ Dunsmuir St in the transit theme, listing six routes with minutes to departure and live status" width="600">
+</p>
+
 ## How it works
 
 ```
@@ -167,6 +171,12 @@ default.
 
 Departures without a live prediction are marked as scheduled (for example
 `m*` on the LED board).
+
+| `eink` | `led` | `transit` |
+| --- | --- | --- |
+| ![E-ink theme](docs/images/board-eink.png) | ![LED theme](docs/images/board-led.png) | ![Transit theme](docs/images/board-transit.png) |
+
+Screenshots: stop 61519, Northbound Seymour St @ Dunsmuir St.
 
 ## Key concepts
 

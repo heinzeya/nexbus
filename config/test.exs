@@ -7,8 +7,5 @@ config :bus_stop, BusStop.Endpoint,
   secret_key_base: "ZPDJVkY+aP9DidxWpAfwgzb8l+AbFhBrJznR9QcAgAQ/Ns1yFMZbVysK6lYjx2KT",
   server: false
 
-# Run Oban jobs manually in tests (use Oban.Testing helpers)
-config :scheduler, Oban, testing: :manual
-
 # Don't run scheduled poller jobs in tests
 config :poller, Poller.Scheduler, jobs: []

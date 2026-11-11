@@ -40,11 +40,6 @@ config :poller, Poller.Scheduler,
 config :datahub,
   gtfs_url: "https://gtfs-static.translink.ca/gtfs/google_transit.zip"
 
-config :scheduler, Oban,
-  repo: Core.Repo,
-  queues: [default: 10],
-  plugins: [{Oban.Plugins.Pruner, max_age: 60 * 60 * 24 * 7}]
-
 config :bus_stop,
   ecto_repos: [Core.Repo],
   generators: [context_app: false]
